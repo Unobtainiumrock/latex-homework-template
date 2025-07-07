@@ -1,0 +1,251 @@
+% Copyright (C) 2024 Nicholas Fleischhauer
+%
+% This homework template is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This template is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this template. If not, see <https://www.gnu.org/licenses/>.
+
+\documentclass[11pt, a4paper, oneside]{article}
+
+\title{Homework 1}
+\author{Nicholas Fleischhauer}
+\date{\today}
+
+% Encoding and language support
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% Mathematical packages
+\usepackage{amsmath, amssymb, amsthm}
+
+% Graphics, tables, and layout
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[inner=1.5cm, outer=1.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\graphicspath{{assets/}}
+
+% Algorithms
+\usepackage{algorithm, algpseudocode}
+
+% Colors and fancy text
+\usepackage[dvipsnames, svgnames, table]{xcolor}
+\usepackage{fancyhdr}
+
+\setlength{\headheight}{13.6pt}
+
+% Custom colors
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+% Page footer management
+\usepackage{lastpage}
+
+% For code blocks (minted - requires pygments)
+\usepackage{minted}
+
+% Quote handling (loaded after minted to avoid warnings)
+\usepackage{csquotes}
+
+% Alternative code listing package (listings)
+\usepackage{listings}
+
+% Bibliography management
+\usepackage[backend=biber, style=authoryear, citestyle=authoryear]{biblatex}
+\addbibresource{references.bib} % Replace with your actual .bib file name
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{OliveGreen},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny,
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{lightlightgray},
+  frame=none,
+  tabsize=2,
+  captionpos=t,
+  breaklines=true,
+  showspaces=false,
+  showtabs=false,
+  columns=flexible,
+  morecomment=[l][\color{magenta}]{\#},
+  morekeywords={__global__, __device__}
+}
+
+% For paragraph formatting
+\usepackage{parskip}
+\setlength{\parskip}{10pt plus 1pt minus 1pt}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    pdfauthor={Nicholas Fleischhauer},
+    pdftitle={Homework Title},
+    pdfsubject={Homework Assignment},
+    pdfkeywords={Homework, LaTeX, Template},
+    pdfproducer={GNU General Public License v3.0 or later, see https://www.gnu.org/licenses/gpl-3.0.en.html},
+    colorlinks=true,
+    linkcolor=darkred,
+    filecolor=magenta,
+    urlcolor=darkblue,
+    citecolor=darkblue,
+    bookmarksnumbered=true,
+    plainpages=false
+}
+
+% Verbatim and special text environments
+\usepackage{verbatim, fancyvrb}
+\VerbatimFootnotes
+
+% Page header and footer style
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Homework Title}
+\rhead{\today}
+\fancyfoot[C]{\scriptsize Page \thepage\ of \pageref*{LastPage} \textbar{} Licensed under the GNU GPL v3.0 or later}
+
+% Custom mathematical commands
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\spn}{\operatorname{span}}
+\newcommand{\nll}{\operatorname{null}}
+\newcommand{\range}{\operatorname{range}}
+
+% Theorems and definitions
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  This is a template for homework assignments. Replace this abstract with a brief summary of your work or remove it entirely if not needed.
+\end{abstract}
+
+\section{Problem 1}
+
+State the problem here.
+
+\subsection{Solution}
+
+Provide your solution here.
+
+\begin{theorem}
+  State any theorems you prove.
+\end{theorem}
+
+\begin{proof}
+  Provide your proof here.
+\end{proof}
+
+\subsection{Code Implementation}
+
+You can use either minted or listings for code blocks:
+
+\subsubsection{Using minted (requires pygments)}
+
+\begin{minted}[linenos, frame=lines]{python}
+def example_function():
+    """
+    Example function for demonstration.
+    """
+    return "Hello, World!"
+\end{minted}
+
+\subsubsection{Using listings}
+
+\begin{lstlisting}[caption={Example Python Code}, label={lst:example}]
+def example_function():
+    """
+    Example function for demonstration.
+    """
+    return "Hello, World!"
+\end{lstlisting}
+
+\section{Problem 2}
+
+State the next problem here.
+
+\subsection{Mathematical Equations}
+
+You can include inline math like $f(x) = x^2$ or display math:
+
+\[
+\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
+\]
+
+\subsection{Figures}
+
+\begin{figure}[H]
+  \centering
+  % \includegraphics[width=0.5\textwidth]{your-figure.png}
+  \caption{Caption for your figure}
+  \label{fig:example}
+\end{figure}
+
+\subsection{Tables}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Column 1} & \textbf{Column 2} & \textbf{Column 3} \\ \hline
+    Data 1 & Data 2 & Data 3 \\ \hline
+    Data 4 & Data 5 & Data 6 \\ \hline
+  \end{tabular}
+  \caption{Example table}
+  \label{tab:example}
+\end{table}
+
+\section{Problem 3}
+
+\subsection{Algorithms}
+
+\begin{algorithm}[H]
+\caption{Example Algorithm}
+\begin{algorithmic}[1]
+\Procedure{ExampleAlgorithm}{$input$}
+    \State $result \gets 0$
+    \For{$i \gets 1$ to $n$}
+        \State $result \gets result + i$
+    \EndFor
+    \State \textbf{return} $result$
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\section{Conclusion}
+
+Summarize your work here.
+
+\section*{License}
+
+This document is licensed under the \textbf{GNU General Public License v3.0 or later}. You are free to copy, modify, and distribute it under the same terms. For the full license, visit \url{https://www.gnu.org/licenses/gpl-3.0.en.html}.
+
+% Uncomment the following line if you have a bibliography
+% \printbibliography
+
+\end{document} 

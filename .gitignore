@@ -1,0 +1,445 @@
+# LaTeX Homework Template .gitignore
+# Comprehensive coverage for LaTeX, Python, and cross-platform development
+
+# LaTeX Generated Files #
+########################
+# Core LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+# Uncomment these if you don't want to ignore images
+# *.ps
+# *.eps
+# *.pdf
+
+# LaTeX Build Tool Files
+latexmk
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Bibliography files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+*.brf
+
+# Glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+*.slg
+*.slo
+*.sls
+*.glstex
+
+# Indexes
+*.idx
+*.ilg
+*.ind
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# Minted (syntax highlighting) - Critical for homework template
+_minted-*/
+*.pyg
+
+# Nomenclature
+*.nlg
+*.nlo
+*.nls
+
+# Pax
+*.pax
+
+# PDF notes
+*.pdfpc
+
+# Sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# Scrwfile
+*.wrt
+
+# SVG
+svg-inkscape/
+
+# Sympy
+*.upa
+*.upb
+
+# TikZ & PGF
+*.auxlock
+*.figlist
+*.makefile
+*.dpth
+*.md5
+
+# Todo notes
+*.tdo
+
+# Version history
+*.hst
+*.ver
+
+# Easy-todo
+*.lod
+
+# Xcolor
+*.xcp
+
+# Xmpincl
+*.xmpi
+
+# Xindy
+*.xdy
+
+# Xypic precompiled matrices
+*.xyc
+*.xyd
+
+# Endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+# Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# Changes
+*.soc
+
+# Comment
+*.cut
+
+# Cprotect
+*.cpt
+
+# Elsarticle
+*.spl
+
+# Endnotes
+*.ent
+
+# Fixme
+*.lox
+
+# Feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+# Standalone
+*.sta
+
+# Pythontex
+*.pytxcode
+pythontex-files-*/
+
+# Tcolorbox
+*.listing
+
+# Thmtools
+*.loe
+
+# Titletoc
+*.ptc
+
+# Hyperref
+*.brf
+
+# Knitr
+*-concordance.tex
+*-tikzDictionary
+
+# Listings
+*.lol
+
+# Luatexja-ruby
+*.ltjruby
+
+# Project-specific LaTeX
+.last_compile
+
+# OS Generated Files #
+######################
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.nfs*
+
+# Editor Files #
+################
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
+tmtags
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+*~.nib
+
+# Python (for Pygments) #
+#########################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyderworkspace
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Node.js (if using any JS tools) #
+###################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directories
+coverage/
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Compiled binaries and packages #
+##################################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Build directories
+build/
+out/
+target/
+
+# Microsoft Office temp files
+~$*
+
+# Credentials and secrets
+credentials.json
+secrets.json
+*.pem
+*.key
+
+# Cache directories
+.cache/
+.sass-cache/
+
