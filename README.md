@@ -49,7 +49,7 @@ A comprehensive LaTeX template for academic homework assignments with automatic 
 #### Option 1: Automatic Installation (Recommended)
 ```bash
 # Clone or download this repository
-git clone <repository-url>
+git clone https://github.com/Unobtainiumrock/latex-homework-template.git
 cd latex-homework-template
 
 # Run the setup script
